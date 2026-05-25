@@ -786,7 +786,7 @@ if(st.sidebar.button('Skill Gap Analysis')):
                 detected_category = "Unknown"
             else:
                 detected_category = max(category_score,key=category_score.get)
-        st.success(f"Best Matching Career Domain: {detected_category.upper()}")
+        st.success(f"Your Domain is: {detected_category.upper()}")
         if detected_category != "Unknown":
             required_skills = skills_db[detected_category]
             matched_skills = {}
