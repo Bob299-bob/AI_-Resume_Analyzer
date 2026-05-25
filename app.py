@@ -18,7 +18,15 @@ encode = joblib.load('label.pkl')
 embed_model = SentenceTransformer('all-MiniLM-L6-v2')
 
 st.title('AI Resume Analyzer')
-
+st.markdown(
+    """
+    <style>
+    .stApp {
+        background-color: #F1F5F9;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
 pdf = st.file_uploader("Upload Your Resume", type=['pdf'])
 jd = st.text_input("Enter Job Description")
 def clean_text(text):
