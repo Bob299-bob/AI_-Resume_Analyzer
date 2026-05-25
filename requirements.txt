@@ -1,0 +1,11 @@
+streamlit
+joblib
+pdfplumber
+matplotlib
+sentence-transformers
+scikit-learn
+reportlab
+numpy
+pandas
+torch
+transformers
