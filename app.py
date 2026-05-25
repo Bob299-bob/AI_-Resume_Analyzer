@@ -822,7 +822,7 @@ if(st.sidebar.button('Skill Gap Analysis')):
                 content = []
                 content.append(Paragraph("AI Resume Skill Analysis Report", styles['Title']))
                 content.append(Spacer(1, 12))
-                content.append(Paragraph(f"Best Matching Career Domain: <b>{category}</b>", styles['Normal']))
+                content.append(Paragraph(f"Selected Career Domain: <b>{category}</b>", styles['Normal']))
                 content.append(Spacer(1, 12))
                 content.append(Paragraph("Matched Skills:", styles['Heading2']))
                 for sub, skills in matched_skills.items():
