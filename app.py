@@ -850,7 +850,7 @@ if(st.sidebar.button('Skill Gap Analysis')):
             plt.xlabel("Skill Type")
             plt.ylabel("Number of Skills")
             st.sidebar.pyplot(fig)
-            st.sidebar.snow()
+            st.sidebar.balloons()
             pdf_report = generate_pdf_report(role,detected_category,matched_skills,missing_skills,matched_count,missing_count)
 
             st.sidebar.download_button(label="📄 Download Report as PDF",data=pdf_report,file_name="resume_skill_report.pdf",mime="application/pdf")
