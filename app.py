@@ -26,7 +26,7 @@ st.markdown(
     }
     </style>
     """,
-    unsafe_allow_html=True
+    unsafe_allow_html=True)
 pdf = st.file_uploader("Upload Your Resume", type=['pdf'])
 jd = st.text_input("Enter Job Description")
 def clean_text(text):
